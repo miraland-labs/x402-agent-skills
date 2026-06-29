@@ -9,12 +9,12 @@ description: >-
   they only say "402" or "paywall my API".
 metadata:
   author: miraland-labs
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # x402 seller (pr402)
 
-Help the user **monetize an HTTP API** on the pr402 facilitator using the **`exact`** (UniversalSettle) rail unless they explicitly need **`sla-escrow`** (escrow + oracle — different skill path; see [oracles Seller Guide](https://github.com/miraland-labs/oracles/blob/main/docs/SELLER_GUIDE.md)).
+Help the user **monetize an HTTP API** on the pr402 facilitator using the **`exact`** rail (SplitVault via pr402) unless they explicitly need **`sla-escrow`** (escrow + oracle — different skill path; see [oracles Seller Guide](https://github.com/miraland-labs/oracles/blob/main/docs/SELLER_GUIDE.md)).
 
 ## Two-part integration model
 
@@ -35,8 +35,9 @@ The [x402 hub](https://github.com/miraland-labs/x402) coordinates docs and ships
 | Seller starter | [miraland-labs/x402-seller-starter](https://github.com/miraland-labs/x402-seller-starter) |
 | Buyer starter | [miraland-labs/x402-buyer-starter](https://github.com/miraland-labs/x402-buyer-starter) |
 | Oracles workspace | [miraland-labs/oracles](https://github.com/miraland-labs/oracles) |
-| UniversalSettle | [miraland-labs/universalsettle](https://github.com/miraland-labs/universalsettle) |
 | x402-cli source | [miraland-labs/x402/tree/main/tools/x402-cli](https://github.com/miraland-labs/x402/tree/main/tools/x402-cli) |
+
+The on-chain **`exact`** rail uses SplitVault (UniversalSettle engine). Program source is **not public** yet — do not link integrators to a GitHub repo; use facilitator docs and the seller starter.
 
 ## Facilitator hosts
 

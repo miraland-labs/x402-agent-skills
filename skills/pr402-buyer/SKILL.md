@@ -9,14 +9,14 @@ description: >-
   or machine economy — even if they only say "402" or "pay for API".
 metadata:
   author: miraland-labs
-  version: "1.1.2"
+  version: "1.1.3"
 ---
 
 # x402 buyer (pr402)
 
 Help the user build a **buyer** that discovers paid resources, settles via pr402, and retries with proof.
 
-Default rail: **`exact`** (UniversalSettle instant settlement). For **`sla-escrow`**, add oracle-specific fields — see [ipay.sh/agent-integration.md](https://ipay.sh/agent-integration.md) and [oracles Buyer Guide](https://github.com/miraland-labs/oracles/blob/main/docs/BUYER_GUIDE.md).
+Default rail: **`exact`** (SplitVault instant settlement via pr402). For **`sla-escrow`**, add oracle-specific fields — see [ipay.sh/agent-integration.md](https://ipay.sh/agent-integration.md) and [oracles Buyer Guide](https://github.com/miraland-labs/oracles/blob/main/docs/BUYER_GUIDE.md).
 
 Reference repo: **[x402-buyer-starter](https://github.com/miraland-labs/x402-buyer-starter)** (Bash / TypeScript / Python — **separate repo**).
 
@@ -118,10 +118,12 @@ Or **`X402Client.buy(url, body)`** for higher-level acquisition.
 
 Production facilitator (default):
 
-- [https://ipay.sh/agent-integration.md](https://ipay.sh/agent-integration.md)
-- [https://ipay.sh/quickstart-buyer.md](https://ipay.sh/quickstart-buyer.md)
+- [https://ipay.sh/agent-integration.md](https://ipay.sh/agent-integration.md) — canonical runbook (prefer over quickstart until redeployed)
+- [x402-buyer-starter README](https://github.com/miraland-labs/x402-buyer-starter) — SDK / MCP / starter default flow
 - [https://ipay.sh/agent-tools.json](https://ipay.sh/agent-tools.json)
 - [https://ipay.sh/openapi.json](https://ipay.sh/openapi.json)
+
+Do **not** treat [ipay.sh/quickstart-buyer.md](https://ipay.sh/quickstart-buyer.md) as the default integrator path until it matches the SDK flow above (seller-side settle on `PAYMENT-SIGNATURE`). Use it only for manual curl after checking the deployed version.
 
 Devnet equivalents live under `https://preview.ipay.sh/…` when testing on Devnet.
 
