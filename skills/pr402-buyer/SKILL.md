@@ -9,7 +9,7 @@ description: >-
   or machine economy — even if they only say "402" or "pay for API".
 metadata:
   author: miraland-labs
-  version: "1.1.3"
+  version: "1.1.4"
 ---
 
 # x402 buyer (pr402)
@@ -118,12 +118,11 @@ Or **`X402Client.buy(url, body)`** for higher-level acquisition.
 
 Production facilitator (default):
 
-- [https://ipay.sh/agent-integration.md](https://ipay.sh/agent-integration.md) — canonical runbook (prefer over quickstart until redeployed)
-- [x402-buyer-starter README](https://github.com/miraland-labs/x402-buyer-starter) — SDK / MCP / starter default flow
+- [https://ipay.sh/agent-integration.md](https://ipay.sh/agent-integration.md) — canonical runbook
+- [https://ipay.sh/quickstart-buyer.md](https://ipay.sh/quickstart-buyer.md) — SDK default + manual curl steps
+- [x402-buyer-starter README](https://github.com/miraland-labs/x402-buyer-starter) — Bash / TypeScript / Python starter
 - [https://ipay.sh/agent-tools.json](https://ipay.sh/agent-tools.json)
 - [https://ipay.sh/openapi.json](https://ipay.sh/openapi.json)
-
-Do **not** treat [ipay.sh/quickstart-buyer.md](https://ipay.sh/quickstart-buyer.md) as the default integrator path until it matches the SDK flow above (seller-side settle on `PAYMENT-SIGNATURE`). Use it only for manual curl after checking the deployed version.
 
 Devnet equivalents live under `https://preview.ipay.sh/…` when testing on Devnet.
 
