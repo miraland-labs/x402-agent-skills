@@ -1,3 +1,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# Local skills CLI install (npx skills add) — source lives under skills/
+.agents/
+skills-lock.json

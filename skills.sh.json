@@ -6,6 +6,7 @@
       "title": "Integrator",
       "description": "Agent skills for x402 sellers and buyers on Solana via pr402 (ipay.sh).",
       "skills": [
+        "pr402",
         "pr402-seller",
         "pr402-buyer"
       ]

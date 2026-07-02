@@ -5,8 +5,8 @@ description: >-
   SplitVault onboarding, PAYMENT-SIGNATURE verify/settle, and discovery enrollment.
   Use whenever the user monetizes an API, adds pay-per-call, implements HTTP 402,
   mentions x402 seller, pr402 seller, X402SellerSDK, merchant wallet, SplitVault,
-  x402-resources.json, x402-seller-starter, or exact-rail UniversalSettle — even if
-  they only say "402" or "paywall my API".
+  x402-resources.json, x402-seller-starter, or exact-rail UniversalSettle. If seller vs buyer
+  is unclear, load **pr402** first.
 metadata:
   author: miraland-labs
   version: "1.1.1"
@@ -122,5 +122,6 @@ Devnet equivalents live under `https://preview.ipay.sh/…` when testing on Devn
 
 ## Related hub skills
 
+- **`pr402`** — entry router when integrator role is unclear
 - **`pr402-facilitator`** — only when **editing** the Rust facilitator, not when integrating as a seller
 - **`pr402-buyer`** — when the same project also needs a paying agent client

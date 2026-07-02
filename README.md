@@ -2,11 +2,12 @@
 
 Public [Agent Skills](https://agentskills.io/specification) for integrating with **pr402** on Solana — monetizing HTTP APIs as a seller or paying for resources as a buyer agent.
 
-This repo contains **only** the two integrator skills. Protocol-dev skills stay in [miraland-labs/x402](https://github.com/miraland-labs/x402) under `.cursor/skills/`.
+This repo contains the **pr402** router plus two specialist integrator skills. Protocol-dev skills stay in [miraland-labs/x402](https://github.com/miraland-labs/x402) under `.cursor/skills/`.
 
 ## Install
 
 ```bash
+npx skills add miraland-labs/x402-agent-skills --skill pr402 -y
 npx skills add miraland-labs/x402-agent-skills --skill pr402-seller -y
 npx skills add miraland-labs/x402-agent-skills --skill pr402-buyer -y
 ```
@@ -23,6 +24,7 @@ After install, skills appear in your agent directory (e.g. `.cursor/skills/`). L
 
 | Skill | Audience | Starter repo |
 | --- | --- | --- |
+| `pr402` | Entry / router — pick seller vs buyer, shared URLs | — |
 | `pr402-seller` | HTTP API providers monetizing via x402 + pr402 | [x402-seller-starter](https://github.com/miraland-labs/x402-seller-starter) |
 | `pr402-buyer` | Paying agents, MCP hosts, autonomous buyers | [x402-buyer-starter](https://github.com/miraland-labs/x402-buyer-starter) |
 
@@ -40,6 +42,7 @@ After install, skills appear in your agent directory (e.g. `.cursor/skills/`). L
 ```
 skills.sh.json
 skills/
+  pr402/            SKILL.md (router — start here if role unclear)
   pr402-seller/     SKILL.md + references/
   pr402-buyer/      SKILL.md + references/
 ```

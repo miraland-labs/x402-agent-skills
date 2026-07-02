@@ -6,7 +6,7 @@ description: >-
   marketplace purchases. Use whenever the user builds a paying agent, auto-pays API
   calls, handles Payment-Required headers, mentions x402 buyer, pr402 buyer, X402Client,
   @pr402/client, @pr402/mcp-server, x402-buyer-starter, forge-cli, agentic payments,
-  or machine economy — even if they only say "402" or "pay for API".
+  or machine economy. If seller vs buyer is unclear, load **pr402** first.
 metadata:
   author: miraland-labs
   version: "1.1.4"
@@ -128,5 +128,6 @@ Devnet equivalents live under `https://preview.ipay.sh/…` when testing on Devn
 
 ## Related
 
+- **`pr402`** — entry router when integrator role is unclear
 - **`pr402-seller`** — when the same project also sells APIs
 - **`pr402-facilitator`** — only when modifying the Rust facilitator codebase
