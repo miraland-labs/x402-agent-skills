@@ -28,10 +28,13 @@ metadata:
 
 ## Install (skills CLI)
 
+All integrator skills (`-y`), or one at a time (interactive):
+
 ```bash
-npx skills add miraland-labs/x402-agent-skills --skill pr402 -y
-npx skills add miraland-labs/x402-agent-skills --skill pr402-seller -y
-npx skills add miraland-labs/x402-agent-skills --skill pr402-buyer -y
+npx skills add miraland-labs/x402-agent-skills --skill pr402 --skill pr402-seller --skill pr402-buyer -y
+npx skills add miraland-labs/x402-agent-skills --skill pr402
+npx skills add miraland-labs/x402-agent-skills --skill pr402-seller
+npx skills add miraland-labs/x402-agent-skills --skill pr402-buyer
 ```
 
 List all skills in this repo:

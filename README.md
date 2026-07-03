@@ -6,10 +6,13 @@ This repo contains the **pr402** router plus two specialist integrator skills. P
 
 ## Install
 
+All integrator skills (non-interactive), or pick one (interactive prompts):
+
 ```bash
-npx skills add miraland-labs/x402-agent-skills --skill pr402 -y
-npx skills add miraland-labs/x402-agent-skills --skill pr402-seller -y
-npx skills add miraland-labs/x402-agent-skills --skill pr402-buyer -y
+npx skills add miraland-labs/x402-agent-skills --skill pr402 --skill pr402-seller --skill pr402-buyer -y
+npx skills add miraland-labs/x402-agent-skills --skill pr402
+npx skills add miraland-labs/x402-agent-skills --skill pr402-seller
+npx skills add miraland-labs/x402-agent-skills --skill pr402-buyer
 ```
 
 List skills:
