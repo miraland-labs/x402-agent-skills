@@ -8,7 +8,7 @@ description: >-
   seller or buyer flows here; hand off to the specialist skill.
 metadata:
   author: miraland-labs
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # pr402 (x402 on Solana)
@@ -20,7 +20,9 @@ metadata:
 | User goal | Load / install | Starter repo |
 | --- | --- | --- |
 | Monetize an HTTP API (402 gate, SplitVault, discovery) | **`pr402-seller`** | [x402-seller-starter](https://github.com/miraland-labs/x402-seller-starter) |
+| Subscription API (hourly/daily/monthly on exact) | **`pr402-seller`** → subscription reference | [x402-subscription-starter](https://github.com/miraland-labs/x402-subscription-starter) |
 | Build a paying agent (402 challenge → pay → retry with proof) | **`pr402-buyer`** | [x402-buyer-starter](https://github.com/miraland-labs/x402-buyer-starter) |
+| Buy subscription access (pay `/subscribe` → Bearer JWT) | **`pr402-buyer`** → subscription reference | [x402-subscription-client](https://github.com/miraland-labs/x402-subscription-client) |
 | Both seller and buyer in one product | Install **both** specialist skills | Both starters above |
 | Conditional delivery / oracle escrow | Stop — **`sla-escrow`** rail + [oracles](https://github.com/miraland-labs/oracles) | Not covered by default integrator skills |
 
@@ -67,6 +69,9 @@ The [x402 hub](https://github.com/miraland-labs/x402) coordinates docs and **x40
 | Buyer starter | [miraland-labs/x402-buyer-starter](https://github.com/miraland-labs/x402-buyer-starter) |
 | Agent skills (this repo) | [miraland-labs/x402-agent-skills](https://github.com/miraland-labs/x402-agent-skills) |
 | Oracles / escrow | [miraland-labs/oracles](https://github.com/miraland-labs/oracles) |
+| Subscription seller starter | [miraland-labs/x402-subscription-starter](https://github.com/miraland-labs/x402-subscription-starter) |
+| Subscription buyer SDK | [miraland-labs/x402-subscription-client](https://github.com/miraland-labs/x402-subscription-client) |
+| Subscription auth (Tier B) | [miralandlabs/subscription-auth](https://github.com/miralandlabs/subscription-auth) |
 
 ## Agent workflow
 
@@ -84,6 +89,8 @@ The [x402 hub](https://github.com/miraland-labs/x402) coordinates docs and **x40
 | Seller runtime SDK gate | **`pr402-seller`** → `references/runtime-sdk.md` |
 | Buyer MCP / `createPay402Fetch` | **`pr402-buyer`** → `references/mcp-and-sdk.md` |
 | Buyer HTTP 402 retry flow | **`pr402-buyer`** → `references/exact-payment-flow.md` |
+| Subscription seller (JWT window on exact) | **`pr402-seller`** → `references/subscription-exact-rail.md` |
+| Subscription buyer (subscribe + Bearer) | **`pr402-buyer`** → `references/subscription-client.md` |
 | Forge purchases | **`pr402-buyer`** → `references/forge-marketplace.md` |
 
 ## Related skills
